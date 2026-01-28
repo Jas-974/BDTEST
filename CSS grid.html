@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Exemple 1 : Layout grid à deux colonnes</title>
+    <!-- CSS -->
+    <style>
+      /* Définition du conteneur de grille */
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
+        grid-gap: 20px; /* Espacement de 20 pixels entre les éléments */
+      }
+      
+      /* Style des éléments de la grille */
+      .item {
+        background-color: #e5e5e5; /* Couleur de fond des éléments */
+        padding: 20px; /* Espacement intérieur de 20 pixels */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Conteneur de grille -->
+    <div class="container">
+      <!-- Élément de la colonne 1 -->
+      <div class="item">Contenu de la colonne 1</div>
+      
+      <!-- Élément de la colonne 2 -->
+      <div class="item">Contenu de la colonne 2</div>
+    </div>
+  </body>
+</html>
